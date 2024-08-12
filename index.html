@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steganography Web App</title>
+    <link rel="stylesheet" href="additional\styles.css">
+</head>
+<body>
+
+    <h1>Steganography Web App</h1>
+
+    <input type="file" id="fileInput">
+    <br>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <br>
+    <button onclick="encodeMessage()">Encode Message</button>
+    <button onclick="decodeMessage()">Decode Message</button>
+
+    <h2>Encoded/Decoded Message:</h2>
+    <textarea id="result" rows="4" cols="50"></textarea>
+
+    <a id="downloadLink" style="display:none;">Download Encoded File</a>
+
+    <script src="additional\steganography.js"></script>
+
+</body>
+</html>
