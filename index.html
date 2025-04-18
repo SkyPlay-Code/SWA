@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Steganography Web App - Hide Messages in Images</title>
+    
+    <meta name="description" content="A simple web application to encode and decode hidden messages within images using steganography techniques. Hide text in pictures online.">
+    
+    <meta name="keywords" content="steganography, hide message in image, encode image, decode image, web app, online tool, image steganography, text in image">
+    
+    <meta property="og:title" content="Steganography Web App">
+    <meta property="og:description" content="A simple web application to encode and decode hidden messages within images using steganography techniques.">
+    <meta property="og:url" content="https://skyplay-code.github.io/SWA/">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Steganography Web App</h1>
+
+    <input type="file" id="fileInput">
+    <br>
+    <input type="text" id="messageInput" placeholder="Enter your message">
+    <br>
+    <button onclick="encodeMessage()">Encode Message</button>
+    <button onclick="decodeMessage()">Decode Message</button>
+
+    <h2>Encoded/Decoded Message:</h2>
+    <textarea id="result" rows="4" cols="50"></textarea>
+
+    <a id="downloadLink" style="display:none;">Download Encoded File</a>
+
+    <script src="steganography.js"></script>
+
+</body>
+</html>
